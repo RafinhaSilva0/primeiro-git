@@ -1,0 +1,130 @@
+.descriptionSection{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-inline: auto;
+    text-align: center;
+    padding-top: 30px;
+    gap: 87px;
+    color: #fff;
+    font-family: var(--ff-primary);
+}
+
+.firstBlock{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 41px;
+
+    h2{
+        font-family: var(--ff-primary);
+        font-weight: 700;
+        font-style: normal;
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+        max-width: 520px;
+        margin-inline: auto;
+    }
+
+    span{
+        color: #338CE4;
+    }
+
+    p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        color: #fff;
+        text-align: center;
+        margin-inline: auto;
+    }
+    
+}
+
+.secondBlock{
+    font-family: var(--ff-primary);
+    background-color: rgba(44, 44, 44, 0.15);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0 , 0.2);
+    border-radius: 15px;
+    padding-top: 35px;
+    padding-bottom: 47px;
+    min-width: 965px;
+    margin-inline: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 41px;
+    
+
+    h2{
+        font-weight: 700;
+        font-style: normal;
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    span{
+        color: #338CE4;
+    }
+
+    p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+        color: #fff;
+        max-width: 780px;
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    button{
+       
+        font-weight: 500;
+        font-family: var(--ff-secondary);
+        justify-content: center;
+        margin-inline: auto;
+        background: #0fbd2c;
+        border: 2px solid #0e8b47;
+        border-radius: 10px;
+        color: #fff;
+        padding-inline: 20px ;
+        padding-block: 11px;
+        max-width: 355px;
+        font-size: 16px;
+        line-height: 19px;
+        font-style: normal;
+        animation: increase-size 3s linear infinite;
+    }
+
+    &:hover{
+        transform: scale(1.03, 1.03);
+        box-shadow: 0px 15px 30px 5px #000;
+        transition: all 0.8s;
+    }
+
+    &:not(:hover){
+        transform: scale(1, 1) translateY(0);
+        box-shadow: none;
+        transition: all 0.8s;
+    }
+}
+
+@keyframes increase-size{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.15);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
